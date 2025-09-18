@@ -5,30 +5,58 @@ public class Tabeller {
 	// a)
 	public static void skrivUt(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden skrivUt ikke implementert");
+        for (int k = 0; k<tabell.length; k++) {
+            System.out.print(tabell[k] + "");
+        }
 
 	}
 
 	// b)
 	public static String tilStreng(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden tilStreng ikke implementert");
-	}
+		String tekst = "";
+        String sum = "";
+        int k = 0;
+
+        for (k = 0; k<tabell.length; k++) {
+
+            tekst = String.valueOf(tabell[k]);
+
+            if (k < tabell.length-1) {
+                tekst = tekst + ",";
+            }
+
+            sum += tekst;
+        }
+
+        return ("[" + sum +  "]");
+        //Her mangler eg måte å få inn komma (,) mellom dei dei tr e talla??
+    }
 
 	// c)
 	public static int summer(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden summer ikke implementert");
+		int sum = 0;
+
+        for (int r = 0; r<tabell.length; r++) {
+            sum += tabell[r];
+        }
+
+        return sum;
 	}
 
 	// d)
 	public static boolean finnesTall(int[] tabell, int tall) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden finnesTall ikke implementert");
+        boolean sanning = false;
+
+        for (int r = 0; r < tabell.length; r++) {
+            if (tall == tabell[r]) {
+                sanning = true;
+            }
+        }
+
+        return sanning;
 
 	}
 
