@@ -6,7 +6,7 @@ public class Tabeller {
 	public static void skrivUt(int[] tabell) {
 
         for (int k = 0; k<tabell.length; k++) {
-            System.out.print(tabell[k] + "");
+            System.out.print(tabell[k] + " ");
         }
 
 	}
@@ -63,15 +63,26 @@ public class Tabeller {
 	// e)
 	public static int posisjonTall(int[] tabell, int tall) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden posisjonTall ikke implementert");
+		int giUt = -1;
+
+        for (int r = 0; r<tabell.length; r++) {
+            if (tall == tabell[r]) {
+                return r;
+            }
+        }
+        return giUt;
+
 	}
 
 	// f)
 	public static int[] reverser(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden reverser ikke implementert");
+        int sum = 0;
+        for (int r = 0; r<tabell.length;) {
+            System.out.print(tabell[r] + " ");
+        }
+
+        return sum;
 	}
 
 	// g)
