@@ -77,12 +77,8 @@ public class Tabeller {
 	// f)
 	public static int[] reverser(int[] tabell) {
 
-        int sum = 0;
-        for (int r = 0; r<tabell.length;) {
-            System.out.print(tabell[r] + " ");
-        }
-
-        return sum;
+        // TODO
+        throw new UnsupportedOperationException("Metoden erSortert ikke implementert");
 	}
 
 	// g)
