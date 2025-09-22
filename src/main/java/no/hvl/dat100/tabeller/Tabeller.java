@@ -77,9 +77,14 @@ public class Tabeller {
 	// f)
 	public static int[] reverser(int[] tabell) {
 
-        // TODO
-        throw new UnsupportedOperationException("Metoden erSortert ikke implementert");
-	}
+
+        int[] sum = new int[0];
+
+        for (int k = tabell.length; k>0; k--) {
+            sum = new int[]{tabell[k]};
+        }
+        return sum;
+    }
 
 	// g)
 	public static boolean erSortert(int[] tabell) {
