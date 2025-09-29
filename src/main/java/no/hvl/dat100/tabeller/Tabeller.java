@@ -106,18 +106,20 @@ public class Tabeller {
 	// h)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
 
+        int[] tab = new int[tabell1.length+tabell2.length];
+
+
+        for (int i = 0; i < tabell1.length; i++){
+            tab[i] = tabell1[i];
+        }
+
         int i = 0;
-        int k = 0;
-        int[] verdi1 = new int[] {tabell1[i]};
-        int[] verdi2 = new int[] {tabell2[k]};
+        for (int k = tabell1.length; k < tabell2.length + tabell1.length; k++) {
 
-        for (i = 0; i < tabell1.length-1; i++){
-            System.out.print(tabell1[i]);
-        }
-        for (k = 0; k < tabell2.length-1; k++) {
-            System.out.print(tabell2[k]);
+            tab[k] = tabell2[i];
+            i++;
         }
 
-        return verdi2;
+        return tab;
 	}
 }
