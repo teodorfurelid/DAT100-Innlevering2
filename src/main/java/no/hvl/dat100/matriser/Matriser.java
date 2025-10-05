@@ -36,7 +36,7 @@ public class Matriser {
 
         for (int i = 0; i < matrise.length; i++){
             for (int k = 0; k < matrise[i].length; k++){
-                sum[i][k] += matrise[i][k]*tall;
+                sum[i][k] = matrise[i][k]*tall;
             }
         }
         return sum;
